@@ -1,0 +1,210 @@
+@use "./../abstracts/variables" as var;
+
+.Nexora-hero {
+  position: relative;
+  min-height: 100svh;
+  padding-top: calc(64px + var.$space-12);
+  padding-bottom: var.$space-16;
+  overflow: hidden;
+
+  @media (min-width: var.$bp-lg) {
+    padding-top: calc(72px + var.$space-16);
+    padding-bottom: var.$space-24;
+  }
+}
+
+.Nexora-hero__background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.Nexora-hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.Nexora-hero__container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: var.$space-12;
+  max-width: var.$container-max;
+  margin-inline: auto;
+  padding-inline: var.$container-padding;
+
+  @media (min-width: var.$bp-lg) {
+    flex-direction: row;
+    align-items: center;
+    gap: var.$space-16;
+    padding-inline: var.$space-12;
+  }
+}
+
+.Nexora-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: var.$space-6;
+  flex: 1;
+}
+
+.Nexora-hero__badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: var.$space-2 var.$space-4;
+  font-size: var.$font-size-xs;
+  font-weight: var.$font-weight-medium;
+  color: var.$color-text-secondary;
+  border: 1px solid var.$color-text-primary;
+  border-radius: var.$radius-full;
+  letter-spacing: var.$letter-spacing-wide;
+}
+
+.Nexora-hero__title {
+  font-family: var.$font-display;
+  font-size: var.$font-size-3xl;
+  font-weight: var.$font-weight-bold;
+  line-height: var.$line-height-tight;
+  letter-spacing: var.$letter-spacing-tight;
+  color: var.$color-text-primary;
+
+  @media (min-width: var.$bp-md) {
+    font-size: var.$font-size-4xl;
+  }
+
+  @media (min-width: var.$bp-lg) {
+    font-size: var.$font-size-5xl;
+  }
+}
+
+.Nexora-hero__title--highlight {
+  display: block;
+  color: var.$color-gold;
+}
+
+.Nexora-hero__description {
+  font-size: var.$font-size-base;
+  color: var.$color-text-secondary;
+  line-height: var.$line-height-normal;
+  max-width: 44ch;
+}
+
+.Nexora-hero__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var.$space-4;
+
+  @media (min-width: var.$bp-sm) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.Nexora-hero__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var.$space-2;
+  padding: var.$space-4 var.$space-8;
+  font-family: var.$font-body;
+  font-size: var.$font-size-base;
+  font-weight: var.$font-weight-semibold;
+  border-radius: var.$radius-full;
+  text-decoration: none;
+  transition: background-color var.$transition-fast, box-shadow var.$transition-fast, transform var.$transition-fast, color var.$transition-fast, border-color var.$transition-fast;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &--primary {
+    background-color: var.$color-gold;
+    color: var.$color-text-inverse;
+
+    &:hover {
+        background-color: var.$color-gold-light;
+        box-shadow: var.$shadow-btn;
+        transform: translateY(-1px);
+        color: var.$color-text-inverse;
+    }
+
+    &:active {
+      background-color: var.$color-gold-dark;
+      transform: translateY(0);
+    }
+  }
+
+  &--ghost {
+    background-color: transparent;
+    color: var.$color-text-primary;
+    border: 1px solid var.$color-text-primary;
+
+    &:hover {
+      color: var.$color-bg-primary;
+      border-color: var.$color-text-primary;
+      background-color: var.$color-text-primary;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var.$color-focus-ring;
+    outline-offset: 3px;
+  }
+}
+
+.Nexora-hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var.$space-8;
+  padding-top: var.$space-6;
+   @media (min-width: var.$bp-md) {
+    margin-top: 1rem;
+  }
+
+  @media (min-width: var.$bp-lg) {
+    margin-top: 0rem;
+  }
+   @media (max-width: var.$bp-md) {
+    gap: var.$space-4;
+    margin: 8rem auto 0 auto;
+  }
+}
+
+.Nexora-hero__stat {
+  display: flex;
+  flex-direction: column;
+  gap: var.$space-1;
+  @media (max-width: var.$bp-md) {
+      max-width: 9ch;
+  }
+}
+
+.Nexora-hero__stat-value {
+  font-family: var.$font-display;
+  font-size: var.$font-size-2xl;
+  font-weight: var.$font-weight-bold;
+  color: var.$color-text-primary;
+  line-height: 1;
+   @media (max-width: var.$bp-md) {
+    font-size: var.$font-size-lg;
+  }
+}
+
+.Nexora-hero__stat-label {
+  font-size: var.$font-size-xs;
+  font-weight: var.$font-weight-medium;
+  color: var.$color-text-muted;
+  text-transform: uppercase;
+  letter-spacing: var.$letter-spacing-wide;
+  @media (max-width: var.$bp-md) {
+    font-size: 0.65rem;
+  }
+}

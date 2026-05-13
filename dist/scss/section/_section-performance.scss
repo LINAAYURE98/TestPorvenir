@@ -1,0 +1,111 @@
+@use "./../abstracts/variables" as var;
+
+.Nexora-performance {
+  background-color: var.$color-bg-secondary;
+  padding-block: var.$space-16;
+
+  @media (min-width: var.$bp-md) {
+    padding-block: var.$space-20;
+  }
+
+  @media (min-width: var.$bp-lg) {
+    padding-block: var.$space-24;
+  }
+}
+
+.Nexora-performance__container {
+  max-width: var.$container-max;
+  margin-inline: auto;
+  padding-inline: var.$container-padding;
+
+  @media (min-width: var.$bp-lg) {
+    padding-inline: var.$space-12;
+  }
+}
+
+.Nexora-performance__header {
+  text-align: center;
+  margin-bottom: var.$space-12;
+
+  @media (min-width: var.$bp-md) {
+    margin-bottom: var.$space-16;
+  }
+}
+
+.Nexora-performance__title {
+  font-family: var.$font-display;
+  font-size: var.$font-size-3xl;
+  font-weight: var.$font-weight-semibold;
+  color: var.$color-text-primary;
+  line-height: var.$line-height-snug;
+  margin-bottom: var.$space-3;
+
+  @media (min-width: var.$bp-md) {
+    font-size: var.$font-size-4xl;
+  }
+}
+
+.Nexora-performance__subtitle {
+  font-size: var.$font-size-base;
+  color: var.$color-text-muted;
+  margin-inline: auto;
+}
+
+.Nexora-performance__grid {
+  display: flex;
+  flex-direction: column;
+  gap: var.$space-4;
+  list-style: none;
+
+  @media (min-width: var.$bp-sm) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: var.$bp-lg) {
+    flex-wrap: nowrap;
+  }
+}
+
+.Nexora-performance__card {
+  display: flex;
+  flex-direction: column;
+  gap: var.$space-2;
+  flex: 1 1 100%;
+  padding: var.$space-8 var.$space-6;
+  border: 1px solid var.$color-border-light;
+  border-radius: var.$radius-lg;
+  transition: border-color var.$transition-normal, box-shadow var.$transition-normal;
+
+  &:hover {
+    border-color: var.$color-border;
+    box-shadow: var.$shadow-card;
+  }
+
+  @media (min-width: var.$bp-sm) {
+    flex: 1 1 calc(50% - var.$space-4);
+  }
+
+  @media (min-width: var.$bp-lg) {
+    flex: 1;
+  }
+}
+
+.Nexora-performance__card-value {
+  font-family: var.$font-display;
+  font-size: var.$font-size-2xl;
+  font-weight: var.$font-weight-bold;
+  color: var.$color-gold;
+  line-height: 1;
+  @media (min-width: var.$bp-md) {
+    font-size: var.$font-size-2xl;
+  }
+}
+
+.Nexora-performance__card-label {
+  font-size: var.$font-size-xs;
+  font-weight: var.$font-weight-semibold;
+  color: var.$color-text-muted;
+  text-transform: uppercase;
+  letter-spacing: var.$letter-spacing-widest;
+}

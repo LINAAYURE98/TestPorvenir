@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexora AI – Fondo de Inversión Inteligente</title>
+  <meta name="description" content="Invierte en tu futuro financiero con Nexora AI. Estrategias de inversión respaldadas por expertos y potenciadas con inteligencia artificial.">
+  <link rel="icon" type="image/svg+xml" href="dist/assets/img/favicon.png">
+  <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+  <header class="Nexora-header" role="banner">
+    <div class="Nexora-header__container">
+
+      <a href="#" class="Nexora-header__brand" aria-label="Nexora AI – Inicio">
+        <span class="Nexora-header__brand-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="2,17 8,11 12,15 22,5" stroke="#C9A84C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="16,5 22,5 22,11" stroke="#C9A84C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="Nexora-header__brand-name">Nexora AI</span>
+      </a>
+
+      <nav class="Nexora-header__nav" role="navigation" aria-label="Navegación principal" id="main-nav">
+        <ul class="Nexora-header__nav-list" role="list">
+          <li class="Nexora-header__nav-item">
+            <a href="#beneficios" class="Nexora-header__nav-link">Beneficios</a>
+          </li>
+          <li class="Nexora-header__nav-item">
+            <a href="#rendimiento" class="Nexora-header__nav-link">Rendimiento</a>
+          </li>
+          <li class="Nexora-header__nav-item">
+            <a href="#faq" class="Nexora-header__nav-link">FAQ</a>
+          </li>
+          <li class="Nexora-header__nav-item">
+            <a href="#testimonios" class="Nexora-header__nav-link">Testimonios</a>
+          </li>
+        </ul>
+        <a href="#contacto" class="Nexora-header__cta" role="button">Comenzar</a>
+        <a href="#contacto" class="Nexora-header__cta Nexora-header__cta--mobile" role="button">Comenzar</a>
+      </nav>
+      
+      <button
+        class="Nexora-header__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+        aria-label="Abrir menú de navegación"
+      >
+        <span class="Nexora-header__toggle-bar" aria-hidden="true"></span>
+        <span class="Nexora-header__toggle-bar" aria-hidden="true"></span>
+        <span class="Nexora-header__toggle-bar" aria-hidden="true"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+        <section class="Nexora-hero" aria-labelledby="hero-heading">
+          <picture class="Nexora-hero__background" aria-hidden="true">
+            <source
+              media="(max-width: 768px)"
+              srcset="dist/assets/img/hero-bg-mobile.png"
+              type="image/png"
+            >
+            <img
+              src="dist/assets/img/hero-bg-desktop.png"
+              alt=""
+              role="presentation"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            >
+          </picture>
+        
+          <div class="Nexora-hero__overlay" aria-hidden="true"></div>
+          <div class="Nexora-hero__container">
+            <div class="Nexora-hero__content">
+              <span class="Nexora-hero__badge">Gestión profesional de inversiones</span>
+              <h1 class="Nexora-hero__title" id="hero-heading">
+                Invierte en tu
+                <span class="Nexora-hero__title--highlight">futuro financiero</span>
+              </h1>
+              <p class="Nexora-hero__description">
+                Accede a estrategias de inversión inteligentes respaldadas por expertos y potenciadas con IA. Transparencia total y crecimiento consistente.
+              </p>
+              <div class="Nexora-hero__actions">
+                <a href="#contacto" class="Nexora-hero__btn Nexora-hero__btn--primary">
+                  Comenzar ahora
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <polyline points="12,5 19,12 12,19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="#rendimiento" class="Nexora-hero__btn Nexora-hero__btn--ghost">Ver rendimiento</a>
+              </div>
+              <div class="Nexora-hero__stats" role="list" aria-label="Estadísticas de rendimiento">
+                <div class="Nexora-hero__stat" role="listitem">
+                  <strong class="Nexora-hero__stat-value">12.5%</strong>
+                  <span class="Nexora-hero__stat-label">Rendimiento anual</span>
+                </div>
+                <div class="Nexora-hero__stat" role="listitem">
+                  <strong class="Nexora-hero__stat-value">$250M</strong>
+                  <span class="Nexora-hero__stat-label">Capital bajo gestión</span>
+                </div>
+                <div class="Nexora-hero__stat" role="listitem">
+                  <strong class="Nexora-hero__stat-value">5K+</strong>
+                  <span class="Nexora-hero__stat-label">Inversionistas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Nexora-benefits" id="beneficios" aria-labelledby="benefits-heading">
+          <div class="Nexora-benefits__container">
+
+            <header class="Nexora-benefits__header">
+              <h2 class="Nexora-benefits__title" id="benefits-heading">¿Por qué elegir Nexora AI?</h2>
+              <p class="Nexora-benefits__label">Tecnología de vanguardia combinada con experiencia institucional.</p>
+            </header>
+
+            <ul class="Nexora-benefits__grid" role="list" aria-label="Beneficios de Nexora AI">
+
+              <li class="Nexora-benefits__card">
+                <span class="Nexora-benefits__card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <polyline points="2,17 8,11 12,15 22,5" stroke="#FFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+                    <polyline points="16,5 22,5 22,11" stroke="#FFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+                  </svg>
+                </span>
+                <h3 class="Nexora-benefits__card-title">Diversificación inteligente</h3>
+                <p class="Nexora-benefits__card-desc">Cartera balanceada en múltiples sectores y clases de activos para optimizar retornos y minimizar riesgos.</p>
+              </li>
+
+              <li class="Nexora-benefits__card">
+                <span class="Nexora-benefits__card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 19V11" stroke="#FFF" stroke-width="2.2" stroke-linecap="round"/>
+                    <path d="M12 19V7" stroke="#FFF" stroke-width="2.2" stroke-linecap="round"/>
+                    <path d="M19 19V4" stroke="#FFF" stroke-width="2.2" stroke-linecap="round"/>
+                  </svg>
+                </span>
+                <h3 class="Nexora-benefits__card-title">Gestión profesional</h3>
+                <p class="Nexora-benefits__card-desc">Equipo de expertos certificados con más de 20 años de experiencia en mercados financieros internacionales.</p>
+              </li>
+
+              <li class="Nexora-benefits__card">
+                <span class="Nexora-benefits__card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="9" stroke="#FFF" stroke-width="2.2"/>
+                  <path d="M12 7V12L15 14" stroke="#FFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </span>
+                <h3 class="Nexora-benefits__card-title">Acceso digital 24/7</h3>
+                <p class="Nexora-benefits__card-desc">Monitorea tu inversión en tiempo real desde cualquier dispositivo. Dashboards interactivos y alertas personalizadas.</p>
+              </li>
+
+              <li class="Nexora-benefits__card">
+                <span class="Nexora-benefits__card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 3H15L20 8V21H8C6.89543 21 6 20.1046 6 19V5C6 3.89543 6.89543 3 8 3Z" stroke="#FFF" stroke-width="2.2" stroke-linejoin="round"/>
+                    <path d="M15 3V8H20" stroke="#FFF" stroke-width="2.2" stroke-linejoin="round"/>
+                    <path d="M10 12H16" stroke="#FFF" stroke-width="2.2" stroke-linecap="round"/>
+                    <path d="M10 16H14" stroke="#FFF" stroke-width="2.2" stroke-linecap="round"/>
+                  </svg>
+                </span>
+                <h3 class="Nexora-benefits__card-title">Transparencia y reportes</h3>
+                <p class="Nexora-benefits__card-desc">Reportes mensuales detallados, análisis de desempeño y acceso completo al historial de transacciones.</p>
+              </li>
+
+              <li class="Nexora-benefits__card">
+                <span class="Nexora-benefits__card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 3L19 6V11C19 16 15.5 20 12 21C8.5 20 5 16 5 11V6L12 3Z" stroke="#FFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.5 12L11 13.5L14.5 10" stroke="#FFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <h3 class="Nexora-benefits__card-title">Seguridad regulatoria</h3>
+                <p class="Nexora-benefits__card-desc">Fondo registrado y supervisado por autoridades financieras. Cumplimiento total con estándares internacionales.</p>
+              </li>
+
+              <li class="Nexora-benefits__card">
+                <span class="Nexora-benefits__card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="11" width="14" height="10" rx="2" stroke="#FFF" stroke-width="2.2"/>
+                    <path d="M8 11V8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8V11" stroke="#FFF" stroke-width="2.2" stroke-linecap="round"/>
+                  </svg>
+                </span>
+                <h3 class="Nexora-benefits__card-title">Protección de capital</h3>
+                <p class="Nexora-benefits__card-desc">Estrategias de cobertura avanzadas y límites de exposición para proteger tu inversión en momentos de volatilidad.</p>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section class="Nexora-howitworks" id="como-funciona" aria-labelledby="howitworks-heading">
+          <div class="Nexora-howitworks__container">
+
+            <header class="Nexora-howitworks__header">
+              <h2 class="Nexora-howitworks__title" id="howitworks-heading">
+                Comienza tu futuro financiero
+                <span class="Nexora-howitworks__title--highlight">en 3 simples pasos</span>
+              </h2>
+              <p class="Nexora-howitworks__subtitle">Sin complicaciones, sin papeles. Tu inversión, más cerca de lo que imaginas.</p>
+            </header>
+
+            <ol class="Nexora-howitworks__steps" role="list" aria-label="Pasos para comenzar a invertir">
+
+              <li class="Nexora-howitworks__step">
+                <div class="Nexora-howitworks__step-number" aria-hidden="true">1</div>
+                <div class="Nexora-howitworks__step-icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.8"/>
+                    <line x1="19" y1="8" x2="19" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <line x1="22" y1="11" x2="16" y2="11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <h3 class="Nexora-howitworks__step-title">Crea tu cuenta</h3>
+                <p class="Nexora-howitworks__step-desc">Crea tu cuenta en menos de 5 minutos. Solo necesitas tu identificación y datos de contacto.</p>
+              </li>
+
+              <li class="Nexora-howitworks__step">
+                <div class="Nexora-howitworks__step-number" aria-hidden="true">2</div>
+                <div class="Nexora-howitworks__step-icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/>
+                    <line x1="2" y1="10" x2="22" y2="10" stroke="currentColor" stroke-width="1.8"/>
+                  </svg>
+                </div>
+                <h3 class="Nexora-howitworks__step-title">Deposita tu inversión</h3>
+                <p class="Nexora-howitworks__step-desc">Transfiere el monto que desees invertir. Mínimo de inversión desde $10,000 USD.</p>
+              </li>
+
+              <li class="Nexora-howitworks__step">
+                <div class="Nexora-howitworks__step-number" aria-hidden="true">3</div>
+                <div class="Nexora-howitworks__step-icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <polyline points="22,7 13.5,15.5 8.5,10.5 2,17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polyline points="16,7 22,7 22,13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <h3 class="Nexora-howitworks__step-title">Monitorea y Crece</h3>
+                <p class="Nexora-howitworks__step-desc">Sigue el crecimiento de tu portafolio en tiempo real y observa cómo crece tu patrimonio.</p>
+              </li>
+
+            </ol>
+
+            <div class="Nexora-howitworks__cta">
+              <a href="#contacto" class="Nexora-howitworks__btn">Comenzar ahora</a>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="Nexora-performance" id="rendimiento" aria-labelledby="performance-heading">
+          <div class="Nexora-performance__container">
+
+            <header class="Nexora-performance__header">
+              <h2 class="Nexora-performance__title" id="performance-heading">Rendimiento comprobado</h2>
+              <p class="Nexora-performance__subtitle">Transparencia total. Resultados reales. Actualizaciones en tiempo real.</p>
+            </header>
+
+            <ul class="Nexora-performance__grid" role="list" aria-label="Métricas de rendimiento de Nexora AI">
+
+              <li class="Nexora-performance__card">
+                <strong class="Nexora-performance__card-value Nexora-performance__card-value--gold">+28%</strong>
+                <span class="Nexora-performance__card-label">ROI acumulado</span>
+              </li>
+
+              <li class="Nexora-performance__card">
+                <strong class="Nexora-performance__card-value Nexora-performance__card-value--gold">$45,280</strong>
+                <span class="Nexora-performance__card-label">Inversión promedio</span>
+              </li>
+
+              <li class="Nexora-performance__card">
+                <strong class="Nexora-performance__card-value">248</strong>
+                <span class="Nexora-performance__card-label">Nuevos inversores</span>
+              </li>
+
+              <li class="Nexora-performance__card">
+                <strong class="Nexora-performance__card-value">8.5%</strong>
+                <span class="Nexora-performance__card-label">Volatilidad</span>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section class="Nexora-faq" id="faq" aria-labelledby="faq-heading">
+            <div class="Nexora-faq__container">
+
+              <header class="Nexora-faq__header">
+                <h2 class="Nexora-faq__title" id="faq-heading">
+                  Preguntas <span class="Nexora-faq__title--highlight">frecuentes</span>
+                </h2>
+                <p class="Nexora-faq__subtitle">Todo lo que necesitas saber antes de invertir.</p>
+              </header>
+
+              <dl class="Nexora-faq__list" role="list">
+
+                <div class="Nexora-faq__item" role="listitem">
+                  <dt class="Nexora-faq__question">
+                    <button
+                      class="Nexora-faq__toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="faq-answer-1"
+                      id="faq-btn-1"
+                    >
+                      <span>¿Cuál es el riesgo de invertir en este fondo?</span>
+                      <svg class="Nexora-faq__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </dt>
+                  <dd class="Nexora-faq__answer" id="faq-answer-1" role="region" aria-labelledby="faq-btn-1" hidden>
+                    <p>Nuestro fondo opera bajo regulación financiera estricta con estrategias de cobertura avanzadas. El riesgo es moderado-bajo gracias a la diversificación en múltiples sectores y clases de activos.</p>
+                  </dd>
+                </div>
+
+                <div class="Nexora-faq__item" role="listitem">
+                  <dt class="Nexora-faq__question">
+                    <button
+                      class="Nexora-faq__toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="faq-answer-2"
+                      id="faq-btn-2"
+                    >
+                      <span>¿Qué tan líquida es mi inversión?</span>
+                      <svg class="Nexora-faq__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </dt>
+                  <dd class="Nexora-faq__answer" id="faq-answer-2" role="region" aria-labelledby="faq-btn-2" hidden>
+                    <p>Puedes solicitar el retiro de tu capital con un plazo de procesamiento de 5 días hábiles. Ofrecemos ventanas de liquidez mensual sin penalizaciones para inversiones mayores a 6 meses.</p>
+                  </dd>
+                </div>
+
+                <div class="Nexora-faq__item" role="listitem">
+                  <dt class="Nexora-faq__question">
+                    <button
+                      class="Nexora-faq__toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="faq-answer-3"
+                      id="faq-btn-3"
+                    >
+                      <span>¿Cuáles son los rendimientos esperados?</span>
+                      <svg class="Nexora-faq__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </dt>
+                  <dd class="Nexora-faq__answer" id="faq-answer-3" role="region" aria-labelledby="faq-btn-3" hidden>
+                    <p>Históricamente hemos generado entre 10% y 28% de ROI anual. Los rendimientos varían según el perfil de riesgo elegido y las condiciones del mercado. Resultados pasados no garantizan rendimientos futuros.</p>
+                  </dd>
+                </div>
+
+                <div class="Nexora-faq__item" role="listitem">
+                  <dt class="Nexora-faq__question">
+                    <button
+                      class="Nexora-faq__toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="faq-answer-4"
+                      id="faq-btn-4"
+                    >
+                      <span>¿Está regulado este fondo de inversión?</span>
+                      <svg class="Nexora-faq__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </dt>
+                  <dd class="Nexora-faq__answer" id="faq-answer-4" role="region" aria-labelledby="faq-btn-4" hidden>
+                    <p>Sí. Nexora AI está registrado y supervisado por la Comisión Nacional Bancaria y de Valores (CNBV) y cumple con todos los estándares internacionales de gestión de fondos de inversión.</p>
+                  </dd>
+                </div>
+
+                <div class="Nexora-faq__item" role="listitem">
+                  <dt class="Nexora-faq__question">
+                    <button
+                      class="Nexora-faq__toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="faq-answer-5"
+                      id="faq-btn-5"
+                    >
+                      <span>¿Qué comisiones se cobran?</span>
+                      <svg class="Nexora-faq__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </dt>
+                  <dd class="Nexora-faq__answer" id="faq-answer-5" role="region" aria-labelledby="faq-btn-5" hidden>
+                    <p>Cobramos una comisión de administración anual del 1.5% sobre el capital gestionado y un 10% sobre las ganancias generadas. No hay comisiones ocultas ni penalizaciones por retiro anticipado.</p>
+                  </dd>
+                </div>
+
+                <div class="Nexora-faq__item" role="listitem">
+                  <dt class="Nexora-faq__question">
+                    <button
+                      class="Nexora-faq__toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="faq-answer-6"
+                      id="faq-btn-6"
+                    >
+                      <span>¿Cuál es la inversión mínima?</span>
+                      <svg class="Nexora-faq__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </dt>
+                  <dd class="Nexora-faq__answer" id="faq-answer-6" role="region" aria-labelledby="faq-btn-6" hidden>
+                    <p>La inversión mínima es de $10,000 USD. Para portafolios personalizados y acceso a estrategias institucionales, el mínimo es de $50,000 USD.</p>
+                  </dd>
+                </div>
+
+              </dl>
+
+            </div>
+          </section>
+
+          <section class="Nexora-testimonials" id="testimonios" aria-labelledby="testimonials-heading">
+            <div class="Nexora-testimonials__container">
+
+              <header class="Nexora-testimonials__header">
+                <h2 class="Nexora-testimonials__title" id="testimonials-heading">Historias de éxito</h2>
+                <p class="Nexora-testimonials__subtitle">Miles de inversionistas confían en Nexora para hacer crecer su patrimonio.</p>
+              </header>
+
+              <ul class="Nexora-testimonials__grid" role="list" aria-label="Testimonios de clientes de Nexora AI">
+
+                <li class="Nexora-testimonials__card">
+                  <div class="Nexora-testimonials__card-header">
+                    <img
+                      class="Nexora-testimonials__avatar"
+                      src="dist/assets/img/person/avatar-maria.png"
+                      alt="Foto de perfil de María González, inversionista en Nexora AI"
+                      title="María González – Inversionista Nexora AI"
+                      width="48"
+                      height="48"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                    <div class="Nexora-testimonials__card-info">
+                      <strong class="Nexora-testimonials__card-name">María González</strong>
+                      <span class="Nexora-testimonials__card-role">Empresaria</span>
+                    </div>
+                  </div>
+                  <div class="Nexora-testimonials__stars" role="img" aria-label="5 de 5 estrellas">
+                    <span aria-hidden="true">★★★★★</span>
+                  </div>
+                  <blockquote class="Nexora-testimonials__card-text">
+                    <p>En solo 8 meses he visto un crecimiento del 18% en mi portafolio. La plataforma es intuitiva y los reportes mensuales me dan total tranquilidad.</p>
+                  </blockquote>
+                </li>
+
+                <li class="Nexora-testimonials__card">
+                  <div class="Nexora-testimonials__card-header">
+                    <img
+                      class="Nexora-testimonials__avatar"
+                      src="dist/assets/img/person/avatar-carlos.png"
+                      alt="Foto de perfil de Carlos Ramírez, inversionista en Nexora AI"
+                      title="Carlos Ramírez – Inversionista Nexora AI"
+                      width="48"
+                      height="48"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                    <div class="Nexora-testimonials__card-info">
+                      <strong class="Nexora-testimonials__card-name">Carlos Ramírez</strong>
+                      <span class="Nexora-testimonials__card-role">Ingeniero</span>
+                    </div>
+                  </div>
+                  <div class="Nexora-testimonials__stars" role="img" aria-label="5 de 5 estrellas">
+                    <span aria-hidden="true">★★★★★</span>
+                  </div>
+                  <blockquote class="Nexora-testimonials__card-text">
+                    <p>Después de probar varias opciones de inversión, encontré en Nexora opciones confiables. El fondo que escogí ha tenido un rendimiento con seguridad y transparencia total.</p>
+                  </blockquote>
+                </li>
+
+                <li class="Nexora-testimonials__card">
+                  <div class="Nexora-testimonials__card-header">
+                    <img
+                      class="Nexora-testimonials__avatar"
+                      src="dist/assets/img/person/avatar-ana.png"
+                      alt="Foto de perfil de Ana Martínez, inversionista en Nexora AI"
+                      title="Ana Martínez – Inversionista Nexora AI"
+                      width="48"
+                      height="48"
+                      loading="lazy"
+                      decoding="async"
+                    >
+                    <div class="Nexora-testimonials__card-info">
+                      <strong class="Nexora-testimonials__card-name">Ana Martínez</strong>
+                      <span class="Nexora-testimonials__card-role">Doctora</span>
+                    </div>
+                  </div>
+                  <div class="Nexora-testimonials__stars" role="img" aria-label="4 de 5 estrellas">
+                    <span aria-hidden="true">★★★★☆</span>
+                  </div>
+                  <blockquote class="Nexora-testimonials__card-text">
+                    <p>La atención personalizada al cliente y la accesibilidad digital hasta ahora han sido la diferencia. Recomiendo a todos mis colegas invertir con Nexora AI.</p>
+                  </blockquote>
+                </li>
+
+              </ul>
+
+            </div>
+          </section>
+
+
+          <section class="Nexora-leadform" id="contacto" aria-labelledby="leadform-heading">
+            <div class="Nexora-leadform__container">
+
+              <div class="Nexora-leadform__content">
+                <h2 class="Nexora-leadform__title" id="leadform-heading">
+                  Invierte hoy en el <br> <span class="Nexora-leadform__title--highlight"> futuro que mereces </span>
+                </h2>
+                <p class="Nexora-leadform__subtitle">Agenda una consulta gratuita. Respuesta garantizada en menos de 24 horas.</p>
+              </div>
+
+              <form
+                class="Nexora-leadform__form"
+                action="#"
+                method="post"
+                novalidate
+                aria-label="Formulario de consulta gratuita con Nexora AI"
+              >
+                <div class="Nexora-leadform__row">
+
+                  <div class="Nexora-leadform__field">
+                    <label class="Nexora-leadform__label" for="lead-name">Nombre completo</label>
+                    <input
+                      class="Nexora-leadform__input"
+                      type="text"
+                      id="lead-name"
+                      name="nombre"
+                      placeholder="María González"
+                      autocomplete="name"
+                      required
+                      aria-required="true"
+                      aria-describedby="lead-name-error"
+                    >
+                    <span class="Nexora-leadform__error" id="lead-name-error" role="alert" aria-live="polite"></span>
+                  </div>
+
+                  <div class="Nexora-leadform__field">
+                    <label class="Nexora-leadform__label" for="lead-email">Email</label>
+                    <input
+                      class="Nexora-leadform__input"
+                      type="email"
+                      id="lead-email"
+                      name="email"
+                      placeholder="maria@empresa.com"
+                      autocomplete="email"
+                      required
+                      aria-required="true"
+                      aria-describedby="lead-email-error"
+                    >
+                    <span class="Nexora-leadform__error" id="lead-email-error" role="alert" aria-live="polite"></span>
+                  </div>
+
+                </div>
+
+                <div class="Nexora-leadform__field">
+                  <label class="Nexora-leadform__label" for="lead-capital">Capital estimado a invertir (USD)</label>
+                  <input
+                    class="Nexora-leadform__input"
+                    type="number"
+                    id="lead-capital"
+                    name="capital"
+                    placeholder="$ 10,000 USD"
+                    min="10000"
+                    autocomplete="off"
+                    required
+                    aria-required="true"
+                    aria-describedby="lead-capital-error lead-capital-hint"
+                  >
+                  <span class="Nexora-leadform__hint" id="lead-capital-hint">Mínimo $10,000 USD</span>
+                  <span class="Nexora-leadform__error" id="lead-capital-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <button class="Nexora-leadform__btn" type="submit">
+                  Solicitar consulta gratuita
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <polyline points="12,5 19,12 12,19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+
+                <p class="Nexora-leadform__legal">
+                  Al enviar este formulario aceptas nuestra
+                  <a href="#" class="Nexora-leadform__legal-link">Política de Privacidad</a>
+                  y los
+                  <a href="#" class="Nexora-leadform__legal-link">Términos y Condiciones</a>.
+                </p>
+
+              </form>
+
+            </div>
+          </section>
+  </main>
+
+  <footer class="Nexora-footer" role="contentinfo">
+    <div class="Nexora-footer__container">
+
+      <div class="Nexora-footer__brand">
+        <a href="/" class="Nexora-footer__brand-link" aria-label="Nexora AI – Inicio">
+          <span class="Nexora-footer__brand-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="2,17 8,11 12,15 22,5" stroke="#C9A84C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="16,5 22,5 22,11" stroke="#C9A84C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="Nexora-footer__brand-name">Nexora AI</span>
+        </a>
+        <p class="Nexora-footer__brand-desc">Inversión profesional con tecnología de vanguardia. Haz crecer tu patrimonio con confianza.</p>
+        <ul class="Nexora-footer__social" role="list" aria-label="Redes sociales">
+          <li>
+            <a href="https://twitter.com" class="Nexora-footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Twitter">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" class="Nexora-footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.8"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" class="Nexora-footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="Nexora-footer__nav" aria-label="Productos">
+        <h3 class="Nexora-footer__nav-title">Productos</h3>
+        <ul class="Nexora-footer__nav-list" role="list">
+          <li><a href="#" class="Nexora-footer__nav-link">Fondo de Inversión</a></li>
+          <li><a href="#" class="Nexora-footer__nav-link">Planes de Retiro</a></li>
+          <li><a href="#" class="Nexora-footer__nav-link">Inversión Sostenible</a></li>
+          <li><a href="#" class="Nexora-footer__nav-link">Portafolios Personalizados</a></li>
+        </ul>
+      </nav>
+
+      <nav class="Nexora-footer__nav" aria-label="Recursos">
+        <h3 class="Nexora-footer__nav-title">Recursos</h3>
+        <ul class="Nexora-footer__nav-list" role="list">
+          <li><a href="#" class="Nexora-footer__nav-link">Centro de Ayuda</a></li>
+          <li><a href="#" class="Nexora-footer__nav-link">Documentación Legal</a></li>
+          <li><a href="#" class="Nexora-footer__nav-link">Blog Financiero</a></li>
+          <li><a href="#" class="Nexora-footer__nav-link">Webinars</a></li>
+        </ul>
+      </nav>
+
+      <div class="Nexora-footer__contact">
+        <h3 class="Nexora-footer__nav-title">Contacto</h3>
+        <ul class="Nexora-footer__contact-list" role="list">
+          <li class="Nexora-footer__contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.8"/>
+              <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <a href="mailto:contacto@nexoraai.com" class="Nexora-footer__contact-link">contacto@nexoraai.com</a>
+          </li>
+          <li class="Nexora-footer__contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <a href="tel:+525512345678" class="Nexora-footer__contact-link">+52 55 1234 5678</a>
+          </li>
+          <li class="Nexora-footer__contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+            <span class="Nexora-footer__contact-text">Bogotá – Colombia</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="Nexora-footer__bottom">
+      <div class="Nexora-footer__bottom-container">
+        <p class="Nexora-footer__copy">© 2026 <strong>Nexora AI</strong>. Todos los derechos reservados.</p>
+        <ul class="Nexora-footer__legal" role="list">
+          <li><a href="#" class="Nexora-footer__legal-link">Privacidad</a></li>
+          <li><a href="#" class="Nexora-footer__legal-link">Términos</a></li>
+          <li><a href="#" class="Nexora-footer__legal-link">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="dist/js/main.js"></script>
+</body>
+</html>

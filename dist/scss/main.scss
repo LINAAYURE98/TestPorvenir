@@ -1,0 +1,15 @@
+//Use
+@use 'abstracts/variables' as var;
+@use 'abstracts/fonts';
+@use 'abstracts/base';
+
+@use 'layout/header/header';
+@use 'layout/footer/footer';
+
+@use 'section/section-hero';
+@use 'section/section-benefits';
+@use 'section/section-howitworks';
+@use 'section/section-performance';
+@use 'section/section-faqs';
+@use 'section/section-testimonials';
+@use 'section/section-leadform';

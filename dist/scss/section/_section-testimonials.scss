@@ -1,0 +1,143 @@
+@use "./../abstracts/variables" as var;
+
+.Nexora-testimonials {
+  background-color: var.$color-bg-primary;
+  padding-block: var.$space-16;
+
+  @media (min-width: var.$bp-md) {
+    padding-block: var.$space-16;
+  }
+
+  @media (min-width: var.$bp-lg) {
+    padding-block: var.$space-20;
+  }
+}
+
+.Nexora-testimonials__container {
+  max-width: var.$container-max;
+  margin-inline: auto;
+  padding-inline: var.$container-padding;
+
+  @media (min-width: var.$bp-lg) {
+    padding-inline: var.$space-12;
+  }
+}
+
+.Nexora-testimonials__header {
+  text-align: center;
+  margin-bottom: var.$space-12;
+
+  @media (min-width: var.$bp-md) {
+    margin-bottom: var.$space-16;
+  }
+}
+
+.Nexora-testimonials__title {
+  font-family: var.$font-display;
+  font-size: var.$font-size-3xl;
+  font-weight: var.$font-weight-semibold;
+  color: var.$color-text-primary;
+  margin-bottom: var.$space-3;
+
+  @media (min-width: var.$bp-md) {
+    font-size: var.$font-size-4xl;
+  }
+}
+
+.Nexora-testimonials__subtitle {
+  font-size: var.$font-size-base;
+  color: var.$color-text-muted;
+  margin-inline: auto;
+}
+
+.Nexora-testimonials__grid {
+  display: flex;
+  flex-direction: column;
+  gap: var.$space-5;
+  list-style: none;
+
+  @media (min-width: var.$bp-md) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: var.$bp-lg) {
+    flex-wrap: nowrap;
+  }
+}
+
+.Nexora-testimonials__card {
+  display: flex;
+  flex-direction: column;
+  gap: var.$space-4;
+  flex: 1 1 100%;
+  padding: var.$space-8;
+  background-color: var.$color-bg-primary;
+  border: 1px solid var.$color-border-light;
+  border-radius: var.$radius-lg;
+  transition: border-color var.$transition-normal, box-shadow var.$transition-normal, transform var.$transition-normal;
+
+  &:hover {
+    border-color: var.$color-border;
+    box-shadow: var.$shadow-card;
+    transform: translateY(-3px);
+  }
+
+  @media (min-width: var.$bp-md) {
+    flex: 1 1 calc(50% - var.$space-5);
+  }
+
+  @media (min-width: var.$bp-lg) {
+    flex: 1;
+  }
+}
+
+.Nexora-testimonials__card-header {
+  display: flex;
+  align-items: center;
+  gap: var.$space-4;
+}
+
+.Nexora-testimonials__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: var.$radius-full;
+  background-color: var.$color-text-primary;
+  object-fit: cover;
+  border: 2px solid var.$color-text-primary;
+  flex-shrink: 0;
+}
+
+.Nexora-testimonials__card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.Nexora-testimonials__card-name {
+  font-size: var.$font-size-base;
+  font-weight: var.$font-weight-semibold;
+  color: var.$color-text-primary;
+}
+
+.Nexora-testimonials__card-role {
+  font-size: var.$font-size-xs;
+  color: var.$color-text-muted;
+  letter-spacing: var.$letter-spacing-wide;
+}
+
+.Nexora-testimonials__stars {
+  color: var.$color-gold;
+  font-size: var.$font-size-md;
+  letter-spacing: 2px;
+}
+
+.Nexora-testimonials__card-text {
+  font-style: normal;
+
+  p {
+    font-size: var.$font-size-sm;
+    color: var.$color-text-muted;
+    line-height: var.$line-height-normal;
+    max-width: none;
+  }
+}

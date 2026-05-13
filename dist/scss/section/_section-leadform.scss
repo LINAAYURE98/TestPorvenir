@@ -1,0 +1,210 @@
+@use "./../abstracts/variables" as var;
+
+.Nexora-leadform {
+  background-color: var.$color-bg-secondary;
+  padding-block: var.$space-16;
+
+  @media (min-width: var.$bp-md) {
+    padding-block: var.$space-16;
+  }
+
+  @media (min-width: var.$bp-lg) {
+    padding-block: var.$space-20;
+  }
+}
+
+.Nexora-leadform__container {
+  max-width: 720px;
+  margin-inline: auto;
+  padding-inline: var.$container-padding;
+  display: flex;
+  flex-direction: column;
+  gap: var.$space-10;
+
+  @media (min-width: var.$bp-lg) {
+    padding-inline: var.$space-8;
+  }
+}
+
+.Nexora-leadform__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var.$space-4;
+}
+
+.Nexora-leadform__title {
+  font-family: var.$font-display;
+  font-size: var.$font-size-3xl;
+  font-weight: var.$font-weight-semibold;
+  color: var.$color-text-primary;
+  line-height: var.$line-height-snug;
+
+  @media (min-width: var.$bp-md) {
+    font-size: var.$font-size-4xl;
+  }
+}
+
+.Nexora-leadform__title--highlight {
+  color: var.$color-gold;
+}
+
+.Nexora-leadform__subtitle {
+  font-size: var.$font-size-base;
+  color: var.$color-text-muted;
+  max-width: none;
+}
+
+.Nexora-leadform__form {
+  display: flex;
+  flex-direction: column;
+  gap: var.$space-5;
+  border: 1px solid var.$color-text-primary;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.Nexora-leadform__row {
+  display: flex;
+  flex-direction: column;
+  gap: var.$space-5;
+
+  @media (min-width: var.$bp-md) {
+    flex-direction: row;
+  }
+
+  .Nexora-leadform__field {
+    flex: 1;
+  }
+}
+
+.Nexora-leadform__field {
+  display: flex;
+  flex-direction: column;
+  gap: var.$space-2;
+}
+
+.Nexora-leadform__label {
+  font-size: var.$font-size-sm;
+  font-weight: var.$font-weight-medium;
+  color: var.$color-text-secondary;
+  cursor: pointer;
+}
+
+.Nexora-leadform__input {
+  width: 100%;
+  padding: var.$space-4 var.$space-5;
+  font-family: var.$font-body;
+  font-size: var.$font-size-base;
+  color: var.$color-text-primary;
+  background-color: var.$color-bg-card;
+  border: 1px solid var.$color-border-light;
+  border-radius: var.$radius-md;
+  transition: border-color var.$transition-fast, box-shadow var.$transition-fast;
+  appearance: none;
+  -webkit-appearance: none;
+
+  &::placeholder {
+    color: var.$color-text-muted;
+  }
+
+  &:hover {
+    border-color: var.$color-border;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    border-color: var.$color-gold;
+    box-shadow: 0 0 0 3px var.$color-gold-muted;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: var.$color-error;
+  }
+
+  &:valid:not(:placeholder-shown) {
+    border-color: var.$color-success;
+  }
+}
+
+.Nexora-leadform__hint {
+  font-size: var.$font-size-xs;
+  color: var.$color-text-muted;
+}
+
+.Nexora-leadform__error {
+  font-size: var.$font-size-xs;
+  color: var.$color-error;
+  min-height: 1em;
+
+  &:empty {
+    display: none;
+  }
+}
+
+.Nexora-leadform__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var.$space-2;
+  width: 100%;
+  padding: var.$space-5 var.$space-8;
+  font-family: var.$font-body;
+  font-size: var.$font-size-base;
+  font-weight: var.$font-weight-semibold;
+  color: var.$color-text-inverse;
+  background-color: var.$color-gold;
+  border: none;
+  border-radius: var.$radius-full;
+  cursor: pointer;
+  transition: background-color var.$transition-fast, box-shadow var.$transition-fast, transform var.$transition-fast;
+  margin-top: var.$space-2;
+
+  &:hover {
+    background-color: var.$color-gold-light;
+    box-shadow: var.$shadow-btn;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    background-color: var.$color-gold-dark;
+    transform: translateY(0);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var.$color-focus-ring;
+    outline-offset: 3px;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+}
+
+.Nexora-leadform__legal {
+  font-size: var.$font-size-xs;
+  color: var.$color-text-muted;
+  text-align: center;
+  line-height: var.$line-height-normal;
+  max-width: none;
+}
+
+.Nexora-leadform__legal-link {
+  color: var.$color-gold;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var.$transition-fast;
+
+  &:hover {
+    color: var.$color-gold-light;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var.$color-focus-ring;
+    outline-offset: 2px;
+    border-radius: var.$radius-sm;
+  }
+}

@@ -1,0 +1,32 @@
+// ============================================================
+// _fonts.scss — Nexora AI Typography Imports
+// ============================================================
+
+// Google Fonts — Cormorant Garamond (display) + Outfit (body)
+// display=swap garantiza que el texto sea visible mientras carga la fuente (buena práctica SEO/UX)
+@use "variables" as var;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+.text-display {
+  font-family: var.$font-display;
+  font-weight: var.$font-weight-semibold;
+  line-height: var.$line-height-tight;
+  letter-spacing: var.$letter-spacing-tight;
+}
+
+.text-body {
+  font-family: var.$font-body;
+  font-weight: var.$font-weight-regular;
+  line-height: var.$line-height-normal;
+}
+
+// Label en mayúscula con espaciado — útil para etiquetas de sección
+.text-label {
+  font-family: var.$font-body;
+  font-size: var.$font-size-xs;
+  font-weight: var.$font-weight-semibold;
+  letter-spacing: var.$letter-spacing-widest;
+  text-transform: uppercase;
+  color: var.$color-gold;
+}
